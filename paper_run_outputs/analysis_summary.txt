@@ -1,0 +1,12 @@
+=== Model Performance ===
+          model  accuracy_mean   f1_mean  recall_mean  roc_auc_mean
+0           SVM       0.774603  0.725079          0.8      0.844444
+1  RandomForest       0.774603  0.770476          0.9      0.855556
+
+=== Group Differences ===
+              feature  mean_diff_stress_minus_baseline  mannwhitney_u_p
+0         hr_mean_bpm                         3.175161         0.022259
+1            rmssd_ms                        72.363442         0.000002
+2  resp_rate_mean_bpm                        -1.046062         0.000201
+
+Best model: RandomForest
