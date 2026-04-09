@@ -11,8 +11,8 @@ class Settings:
     """
 
     # ===== 路径 =====
-    data_dir: Path                 # WESAD 数据根目录
-    output_dir: Path               # 输出目录
+    data_dir: Path  = r"./data"              # WESAD 数据根目录
+    output_dir: Path  = r"./output"            # 输出目录
 
     # ===== 窗口参数 =====
     window_seconds: int = 60       # 窗口长度（秒）
@@ -30,7 +30,7 @@ class Settings:
     LABEL_STRESS: int = 2
     LABEL_AMUSEMENT: int = 3
     LABEL_MEDITATION: int = 4
-
+    
     def __post_init__(self):
         """
         初始化后检查路径是否合法
